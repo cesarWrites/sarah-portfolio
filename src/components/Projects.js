@@ -1,42 +1,76 @@
 import React from 'react';
-import { Container, Typography, Grid, Paper } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import { Typography, Container, Grid, Card, CardContent, CardActions, Button } from '@material-ui/core';
+
+const projects = [
+  {
+    title: 'Project 1',
+    githubLink: 'https://github.com/example/project1',
+    liveLink: 'https://example.com/project1',
+    description: 'Description of Project 1...',
+  },
+  {
+    title: 'Project 2',
+    githubLink: 'https://github.com/example/project2',
+    liveLink: 'https://example.com/project2',
+    description: 'Description of Project 2...',
+  },
+  {
+    title: 'Project 3',
+    githubLink: 'https://github.com/example/project3',
+    liveLink: 'https://example.com/project3',
+    description: 'Description of Project 3...',
+  },
+];
 
 const useStyles = makeStyles((theme) => ({
-  section: {
-    padding: theme.spacing(4),
-    marginBottom: theme.spacing(4),
+  root: {
+    paddingTop: theme.spacing(6),
+    paddingBottom: theme.spacing(6),
   },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
+  card: {
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
   },
 }));
 
-
 const Projects = () => {
-    const classes = useStyles();
-  
-    return (
-      <section className={classes.section}>
-        <Container maxWidth="md">
-          <Typography variant="h2" gutterBottom>
-            Projects
-          </Typography>
-          <Grid container spacing={3}>
-            {/* Add your projects components here */}
-            <Grid item xs={12} sm={6}>
-              <Paper className={classes.paper}>Project 1</Paper>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Paper className={classes.paper}>Project 2</Paper>
-            </Grid>
-            {/* Add more Grid items as needed */}
-          </Grid>
-        </Container>
-      </section>
-    );
-  };
+  const classes = useStyles();
 
-  export default Projects;
+  return (
+    <div className={classes.root}>
+      <Container maxWidth="md">
+        <Typography variant="h4" component="h2" gutterBottom>
+          Projects
+        </Typography>
+        <Grid container spacing={4}>
+          {projects.map((project, index) => (
+            <Grid item xs={12} sm={6} md={4} key={index}>
+              <Card className={classes.card} elevation={3}>
+                <CardContent>
+                  <Typography variant="h6" component="h3" gutterBottom>
+                    {project.title}
+                  </Typography>
+                  <Typography variant="body2" color="textSecondary">
+                    {project.description}
+                  </Typography>
+                </CardContent>
+                <CardActions style={{ display: 'flex', flexDirection: 'column'}}>
+                  <Button size="small" color="primary" href={project.githubLink} target="_blank">
+                    GitHub
+                  </Button>
+                  <Button size="small" color="primary" href={project.liveLink} target="_blank">
+                    Live
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </div>
+  );
+};
+
+export default Projects;
