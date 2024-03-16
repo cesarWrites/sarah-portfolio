@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align the navbar horizontally */
+}
+
+.navbar {
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Align the navbar items horizontally */
+}
+
+.nav-list li {
+  margin: 0 10px; /* Adjust spacing between navbar items */
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #333; /* Adjust color as needed */
+}
+
+.nav-list li a:hover {
+  color: #000; /* Change color on hover */
+}
+
