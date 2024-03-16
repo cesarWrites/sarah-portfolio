@@ -4,9 +4,9 @@ import { Typography, Container, Grid, Card, CardContent, CardActionArea } from '
 
 const articles = [
   {
-    title: 'Article 1',
-    url: 'https://example.com/article1',
-    overview: 'Overview of Article 1...',
+    title: 'Domain Knowledge in Data Science',
+    url: 'https://dev.to/cesarwrites/the-power-of-domain-knowledge-in-building-a-successful-data-science-career-4k9a',
+    overview: 'Domain knowledge refers to expertise in a specific industry or field, such as healthcare, finance, retail, or agriculture. While data science skills are essential, the real magic happens when you combine them with a deep understanding of the domain you are working in...',
   },
   {
     title: 'Article 2',
@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
   },
   card: {
     height: '100%',
+    border: '1px solid black'
   },
 }));
 

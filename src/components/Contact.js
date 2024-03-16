@@ -11,8 +11,9 @@ const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: '#000',
     color: '#fff',
-    paddingTop: theme.spacing(6),
-    paddingBottom: theme.spacing(6),
+    paddingTop: theme.spacing(4),
+    paddingBottom: theme.spacing(2),
+    width: "100%"
   },
   icon: {
     fontSize: 50,

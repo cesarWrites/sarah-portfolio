@@ -5,12 +5,12 @@ import  image  from '../assets/profile.jpeg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: '#333', // Dark background color for the portfolio
-    padding: theme.spacing(6), // Adjust padding as needed
+    backgroundColor: '#000', // Dark background color for the portfolio
+    padding: theme.spacing(6), 
   },
   paper: {
     padding: theme.spacing(4),
-    backgroundColor: '#444', // Darker background color for the section
+    backgroundColor: '#fff', 
   },
   image: {
     maxWidth: '100%',
@@ -31,10 +31,10 @@ const About = () => {
                 About Me
               </Typography>
               <Typography variant='h3' component="h2" gutterBottom>
-                I am Sarah Mukuti
+                Sarah Mukuti,
               </Typography>
               <Typography variant="body1" paragraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at felis sed leo consectetur commodo. Nullam ut nisl nec lacus ultricies commodo sed ac arcu. Sed fermentum tristique fermentum. Nulla eget dolor vitae sapien tincidunt consequat.
+                I am a self driven person who taps into the power of technology to help organizations achieve better outcomes using data. I am particlulay intrigued by the idea of collecting, organizing and visualizing data in a manner that generates actionable insights.I am very flexible in learning new ideas, tools, and technologies that will come in handy while solving any problem. 
               </Typography>
             </Grid>
             <Grid item xs={12} md={6}>
