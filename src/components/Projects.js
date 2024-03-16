@@ -4,10 +4,10 @@ import { Typography, Container, Grid, Card, CardContent, CardActions, Button } f
 
 const projects = [
   {
-    title: 'Project 1',
-    githubLink: 'https://github.com/example/project1',
-    liveLink: 'https://example.com/project1',
-    description: 'Description of Project 1...',
+    title: 'Prodev Learning',
+    githubLink: 'https://github.com/cesarWrites/pro-dev-learning-app',
+    liveLink: 'https://pro-dev-learning-app.vercel.app/',
+    description: 'An online course learning platform...',
   },
   {
     title: 'Project 2',

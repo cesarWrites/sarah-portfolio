@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Container, Grid, Paper } from '@material-ui/core';
-import  image  from '../assets/profile.jpeg';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
 
 const About = () => {
   const classes = useStyles();
-
+  const image = 'https://drive.google.com/file/d/1zCdaeKuVq-u9XTBcsnyMHsIFxfwXSXjl/view?usp=sharing';
+console.log(image)
   return (
     <div className={classes.root}>
       <Container maxWidth="md">
@@ -38,7 +39,7 @@ const About = () => {
               </Typography>
             </Grid>
             <Grid item xs={12} md={6}>
-              <img src={image} alt="Profile" className={classes.image} />
+              <img src= "https://drive.google.com/file/d/1zCdaeKuVq-u9XTBcsnyMHsIFxfwXSXjl/view" alt="Profile" className={classes.image} />
             </Grid>
           </Grid>
         </Paper>
