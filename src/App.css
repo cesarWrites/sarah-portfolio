@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #000080;
 }
 
 .App-logo {
@@ -40,27 +41,28 @@
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Align the navbar horizontally */
+  align-items: center; 
 }
 
 .navbar {
-  margin-top: 20px; /* Adjust as needed */
+  margin-top: 20px; 
+  margin-left: 20%;
 }
 
 .nav-list {
   list-style-type: none;
   padding: 0;
   display: flex;
-  justify-content: center; /* Align the navbar items horizontally */
+  justify-content: center; 
 }
 
 .nav-list li {
-  margin: 0 10px; /* Adjust spacing between navbar items */
+  margin: 0 10px; 
 }
 
 .nav-list li a {
   text-decoration: none;
-  color: #333; /* Adjust color as needed */
+  color: #333; /
 }
 
 .nav-list li a:hover {

@@ -14,7 +14,7 @@ function App() {
     //   <Articles/>
     //   <Contact/>
     //  </div>
-
+<div className='App'>
     <div className="container">
       <nav className="navbar">
         <ul className="nav-list">
@@ -60,6 +60,7 @@ function App() {
         <h2><Contact/></h2>
       </div>
 
+      </div>
       </div>
   );
 }
